@@ -1,0 +1,17 @@
+{
+    "name": "mern-ai-saas-root",
+    "version": "1.0.0",
+    "scripts": {
+        "test:server": "npm test --prefix server",
+        "test:client": "npm test --prefix client",
+        "test:all": "concurrently \"npm run test:server\" \"npm run test:client\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "description": "A full-stack MERN application that leverages multiple AI providers (Google Gemini & Groq Llama 3) to generate SEO-optimized blog metadata, outlines, and internal link suggestions.",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
