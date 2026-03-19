@@ -12,18 +12,14 @@ const errorHandler = require("./middleware/errorHandler");
 
 const app = express();
 
-app.use(
-    cors({
-        origin: [
-            "http://localhost:3000",
-            "http://localhost:5173",
-            "http://localhost:5174",
-            "http://localhost:4000",
-            process.env.CLIENT_URL
-        ],
-        credentials: true,
-    })
-);
+const allowedOrigin = process.env.CLIENT_URL || 'http://localhost:5173';
+
+app.use(cors({
+    origin: allowedOrigin,
+    credentials: true, // Required if you are sending tokens/cookies
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 app.use(express.json());
 app.use(morgan("dev"));
