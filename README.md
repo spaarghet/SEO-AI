@@ -2,12 +2,12 @@
 
 A full-stack MERN application that leverages multiple AI providers (Google Gemini & Groq Llama 3) to generate SEO-optimized blog metadata, outlines, and internal link suggestions.
 
-## 🚀 Live Demo
+## Live Demo
 **[Insert Your Vercel URL Here]** *Admin Credentials:* `admin@gmail.com` / `admin@123`
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Local Environment
 **Backend:**
@@ -30,7 +30,7 @@ A full-stack MERN application that leverages multiple AI providers (Google Gemin
 
 ---
 
-## 🔑 Environment Variables
+## Environment Variables
 
 ### Backend (`/server/.env`)
 * `PORT`: Server port (e.g., 5000)
